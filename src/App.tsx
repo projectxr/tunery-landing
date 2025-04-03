@@ -115,43 +115,37 @@ const TuneryLandingPage: React.FC = () => {
 				<div className='max-w-7xl mx-auto w-full'>
 					{/* Background Decorative Elements */}
 					<div className='absolute left-0 top-0 w-full h-full'>
-						<div
-							className='absolute left-0 top-1/4 w-48 h-48 md:w-64 md:h-64 opacity-50 rounded-full blur-3xl'
-							style={{ background: `${colors.primary}15` }}
-						></div>
-						<div
-							className='absolute right-0 bottom-1/4 w-48 h-48 md:w-64 md:h-64 opacity-50 rounded-full blur-3xl'
-							style={{ background: `${colors.primary}15` }}
-						></div>
-						<div
-							className='absolute right-0 top-0 w-32 h-96 opacity-30 rounded-full blur-3xl'
-							style={{ background: `${colors.primary}15` }}
-						></div>
-						<div
-							className='absolute left-1/4 bottom-0 w-96 h-48 opacity-30 rounded-full blur-3xl'
-							style={{ background: `${colors.primary}15` }}
-						></div>
-					</div>
+						{/* Top-right blur */}
+						<motion.div
+							className='absolute right-0 top-0 w-32 h-32 rounded-full blur-3xl'
+							style={{ background: `rgba(108, 92, 231, 0.3)` }}
+							animate={{
+								scale: [1, 1.1, 1],
+								opacity: [0.25, 0.3, 0.25],
+							}}
+							transition={{
+								duration: 8,
+								repeat: Infinity,
+								ease: 'easeInOut',
+							}}
+						/>
+						{/* Bottom-left blur */}
+						<motion.div
+							className='absolute left-0 bottom-0 w-32 h-32 rounded-full blur-3xl'
+							style={{ background: `rgba(108, 92, 231, 0.6)` }}
+							animate={{
+								scale: [1, 1.1, 1],
+								opacity: [0.25, 0.3, 0.25],
+							}}
+							transition={{
+								duration: 6,
+								repeat: Infinity,
+								ease: 'easeInOut',
+							}}
+						/>
 
-					{/* Question Mark Decoration */}
-					<motion.div
-						className='absolute left-8 bottom-8 opacity-10 text-[200px] font-bold select-none'
-						style={{
-							color: colors.primaryLight,
-							transform: `translateY(${scrollY * 0.1}px)`,
-						}}
-						animate={{
-							y: [0, -10, 0],
-							rotate: [-5, 0, -5],
-						}}
-						transition={{
-							duration: 6,
-							repeat: Infinity,
-							ease: 'easeInOut',
-						}}
-					>
-						?
-					</motion.div>
+						{/* Geometric shapes */}
+					</div>
 
 					<div className='mx-auto text-center relative z-10'>
 						<motion.h1
