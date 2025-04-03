@@ -497,7 +497,7 @@ const TuneryLandingPage: React.FC = () => {
 								whileTap={{ scale: 0.98 }}
 								onClick={() => {
 									if (email && message) {
-										window.location.href = `mailto:info@tunery.ai?subject=Interest from ${email}&body=Email: Message: ${message}`;
+										window.location.href = `mailto:info@tunery.ai?subject=Interest from ${email}&body=Message: ${message}`;
 									}
 								}}
 							>
