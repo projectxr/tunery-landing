@@ -267,8 +267,10 @@ const TuneryLandingPage: React.FC = () => {
 							>
 								<img src='/accelerated_dev.png' alt='Accelerate Dev' className='w-8 h-8' />
 							</div>
-							<h3 className='text-3xl font-semibold mb-4'>Accelerate Dev</h3>
-							<p className='text-gray-600 text-lg'>
+							<h3 className='text-3xl font-semibold mb-4' style={{ color: colors.textDark }}>
+								Accelerate Dev
+							</h3>
+							<p className='text-gray-600 text-lg' style={{ color: colors.textGray }}>
 								evaluation, synthetic data, model fine-tuning, built in
 							</p>
 						</motion.div>
@@ -281,8 +283,10 @@ const TuneryLandingPage: React.FC = () => {
 							>
 								<img src='/model_agnostic_apps.png' alt='Model Agnostic Apps' className='w-8 h-8' />
 							</div>
-							<h3 className='text-3xl font-semibold mb-4'>Model agnostic apps</h3>
-							<p className='text-gray-600 text-lg'>
+							<h3 className='text-3xl font-semibold mb-4' style={{ color: colors.textDark }}>
+								Model agnostic apps
+							</h3>
+							<p className='text-gray-600 text-lg' style={{ color: colors.textGray }}>
 								Avoid lock-in, build and test apps across multiple models.
 							</p>
 						</motion.div>
@@ -295,8 +299,10 @@ const TuneryLandingPage: React.FC = () => {
 							>
 								<img src='/deployments.png' alt='Deployments' className='w-8 h-8' />
 							</div>
-							<h3 className='text-3xl font-semibold mb-4'>Flexible Deployments:</h3>
-							<p className='text-gray-600 text-lg'>
+							<h3 className='text-3xl font-semibold mb-4' style={{ color: colors.textDark }}>
+								Flexible Deployments:
+							</h3>
+							<p className='text-gray-600 text-lg' style={{ color: colors.textGray }}>
 								deploy to VPC, private, even air-gapped environments
 							</p>
 						</motion.div>
@@ -331,8 +337,10 @@ const TuneryLandingPage: React.FC = () => {
 							>
 								<img src='/experimental_freely.png' alt='Experiment Freely' className='w-8 h-8' />
 							</div>
-							<h3 className='text-3xl font-semibold mb-4'>Experiment Freely</h3>
-							<p className='text-gray-600 text-lg'>
+							<h3 className='text-3xl font-semibold mb-4' style={{ color: colors.textDark }}>
+								Experiment Freely
+							</h3>
+							<p className='text-gray-600 text-lg' style={{ color: colors.textGray }}>
 								Test open-source models in dedicated deployments—no boundaries, just innovation.
 							</p>
 						</motion.div>
@@ -345,8 +353,10 @@ const TuneryLandingPage: React.FC = () => {
 							>
 								<img src='/fast_start.png' alt='Fast Start' className='w-8 h-8' />
 							</div>
-							<h3 className='text-3xl font-semibold mb-4'>Fast start</h3>
-							<p className='text-gray-600 text-lg'>
+							<h3 className='text-3xl font-semibold mb-4' style={{ color: colors.textDark }}>
+								Fast start
+							</h3>
+							<p className='text-gray-600 text-lg' style={{ color: colors.textGray }}>
 								towards AI driven automation with agent workbench
 							</p>
 						</motion.div>
@@ -359,8 +369,12 @@ const TuneryLandingPage: React.FC = () => {
 							>
 								<img src='/deployments.png' alt='Hybrid Deployments' className='w-8 h-8' />
 							</div>
-							<h3 className='text-3xl font-semibold mb-4'>Hybrid deployments</h3>
-							<p className='text-gray-600 text-lg'>deploy across multicloud, on-premise</p>
+							<h3 className='text-3xl font-semibold mb-4' style={{ color: colors.textDark }}>
+								Hybrid deployments
+							</h3>
+							<p className='text-gray-600 text-lg' style={{ color: colors.textGray }}>
+								deploy across multicloud, on-premise
+							</p>
 						</motion.div>
 					</div>
 				</div>
