@@ -253,6 +253,7 @@ const TuneryLandingPage: React.FC = () => {
 					<motion.h2
 						className='text-5xl md:text-6xl font-bold mb-20 flex items-baseline gap-3 justify-center'
 						variants={fadeIn}
+						style={{ color: colors.textDark }}
 					>
 						For <span style={{ color: colors.primary }}>app developers</span>
 					</motion.h2>
@@ -316,6 +317,7 @@ const TuneryLandingPage: React.FC = () => {
 					<motion.h2
 						className='text-5xl md:text-6xl font-bold mb-20 flex items-baseline gap-3 justify-center'
 						variants={fadeIn}
+						style={{ color: colors.textDark }}
 					>
 						For <span style={{ color: colors.primary }}>Enterprises</span>
 					</motion.h2>
@@ -469,7 +471,9 @@ const TuneryLandingPage: React.FC = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.6 }}
 					>
-						<h2 className='text-4xl font-bold mb-4'>Contact Us</h2>
+						<h2 className='text-4xl font-bold mb-4' style={{ color: colors.textDark }}>
+							Contact Us
+						</h2>
 						<p className='mb-12 text-gray-400'>
 							Stay up to date with the industry trends.
 							<br />
