@@ -485,7 +485,7 @@ const TuneryLandingPage: React.FC = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.6 }}
 					>
-						<h2 className='text-4xl font-bold mb-4' style={{ color: colors.textDark }}>
+						<h2 className='text-4xl font-bold mb-4' style={{ color: 'white' }}>
 							Contact Us
 						</h2>
 						<p className='mb-12 text-gray-400'>
