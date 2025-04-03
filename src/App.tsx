@@ -207,29 +207,33 @@ const TuneryLandingPage: React.FC = () => {
 
 			{/* Accelerate AI Section */}
 			<motion.section
-				className='text-white py-16 mx-6 md:mx-12 rounded-3xl'
-				style={{
-					backgroundColor: colors.darkBg,
-					boxShadow: 'inset 0 0 50px rgba(0, 0, 0, 0.5)',
-				}}
+				className='relative z-10 -mt-20 mx-6 md:mx-12'
 				initial='hidden'
 				whileInView='visible'
 				viewport={{ once: true, amount: 0.3 }}
 				variants={fadeIn}
 			>
-				<div className='max-w-7xl mx-auto px-6 md:px-24 lg:px-32'>
-					<div className='flex flex-col md:flex-row items-start gap-16'>
-						<div className='md:w-1/2'>
-							<h2 className='text-5xl md:text-6xl font-bold mb-4 tracking-tight'>
-								Accelerate AI <br />
-								with <span style={{ color: colors.primaryLight }}>tunery</span>
-							</h2>
-						</div>
-						<div className='md:w-1/2'>
-							<p className='text-gray-300 text-xl leading-relaxed max-w-2xl'>
-								tunery's comprehensive suite of tools to evaluate, enhance and deploy open source AI
-								models, enables you to exploit AI while retaining control on your data
-							</p>
+				<div
+					className='text-white py-16 px-6 md:px-24 lg:px-32 rounded-3xl'
+					style={{
+						backgroundColor: colors.darkBg,
+						boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)',
+					}}
+				>
+					<div className='max-w-7xl mx-auto'>
+						<div className='flex flex-col md:flex-row items-start gap-16'>
+							<div className='md:w-1/2'>
+								<h2 className='text-5xl md:text-6xl font-bold mb-4 tracking-tight'>
+									Accelerate AI <br />
+									with <span style={{ color: colors.primaryLight }}>tunery</span>
+								</h2>
+							</div>
+							<div className='md:w-1/2'>
+								<p className='text-gray-300 text-xl leading-relaxed max-w-2xl'>
+									tunery's comprehensive suite of tools to evaluate, enhance and deploy open source
+									AI models, enables you to exploit AI while retaining control on your data
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
