@@ -46,7 +46,7 @@ const staggerContainer = {
 
 const TuneryLandingPage: React.FC = () => {
 	const [email, setEmail] = useState('');
-	const [setScrollY] = useState(0);
+	const [scrollY, setScrollY] = useState(0);
 	const [animatedText, setAnimatedText] = useState('open source AI');
 
 	// Text animation cycle
@@ -136,7 +136,10 @@ const TuneryLandingPage: React.FC = () => {
 					{/* Question Mark Decoration */}
 					<motion.div
 						className='absolute left-8 bottom-8 opacity-10 text-[200px] font-bold select-none'
-						style={{ color: colors.primaryLight }}
+						style={{
+							color: colors.primaryLight,
+							transform: `translateY(${scrollY * 0.1}px)`,
+						}}
 						animate={{
 							y: [0, -10, 0],
 							rotate: [-5, 0, -5],
