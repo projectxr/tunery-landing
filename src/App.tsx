@@ -396,7 +396,9 @@ const TuneryLandingPage: React.FC = () => {
 							{[1, 2, 3, 4].map(i => (
 								<motion.div
 									key={i}
-									className='p-6 border border-gray-200 rounded-xl hover:shadow-md transition-shadow flex flex-col items-center'
+									className={`p-6 border border-gray-200 rounded-xl hover:shadow-md transition-shadow flex flex-col items-center ${
+										i > 2 ? 'hidden sm:block' : ''
+									}`}
 									whileHover={{ scale: 1.02 }}
 								>
 									<div className='bg-violet-600 text-white p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4'>
