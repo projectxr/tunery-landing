@@ -154,6 +154,7 @@ const TuneryLandingPage: React.FC = () => {
 						<motion.h1
 							className='text-6xl md:text-8xl font-bold mb-12 leading-tight'
 							variants={fadeIn}
+							style={{ color: colors.textDark }}
 						>
 							Build enterprise applications <br />
 							with{' '}
