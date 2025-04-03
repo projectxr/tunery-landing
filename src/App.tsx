@@ -46,6 +46,7 @@ const staggerContainer = {
 
 const TuneryLandingPage: React.FC = () => {
 	const [email, setEmail] = useState('');
+	const [message, setMessage] = useState('');
 	const [scrollY, setScrollY] = useState(0);
 	const [animatedText, setAnimatedText] = useState('open source AI');
 
@@ -470,14 +471,21 @@ const TuneryLandingPage: React.FC = () => {
 							Don't worry we won't spam.
 						</p>
 
-						<div className='flex flex-col md:flex-row gap-4 max-w-xl mx-auto'>
+						<div className='flex flex-col gap-4 max-w-xl mx-auto'>
 							<input
 								type='email'
 								placeholder='Enter your email'
-								className='px-6 py-4 rounded-md bg-gray-800/50 text-white border border-gray-700 focus:outline-none focus:border-purple-500 flex-grow text-base'
+								className='px-6 py-4 rounded-md bg-gray-800/50 text-white border border-gray-700 focus:outline-none focus:border-purple-500 text-base'
 								style={{ '--tw-focus-border-color': colors.primary }}
 								value={email}
 								onChange={e => setEmail(e.target.value)}
+							/>
+							<textarea
+								placeholder='Enter your message'
+								className='px-6 py-4 rounded-md bg-gray-800/50 text-white border border-gray-700 focus:outline-none focus:border-purple-500 text-base min-h-[120px]'
+								style={{ '--tw-focus-border-color': colors.primary }}
+								value={message}
+								onChange={e => setMessage(e.target.value)}
 							/>
 							<motion.button
 								className='text-white px-8 py-4 rounded-md text-base font-medium'
@@ -487,6 +495,11 @@ const TuneryLandingPage: React.FC = () => {
 								}}
 								whileHover={{ scale: 1.02 }}
 								whileTap={{ scale: 0.98 }}
+								onClick={() => {
+									if (email && message) {
+										window.location.href = `mailto:info@tunery.ai?subject=Interest from ${email}&body=Email: Message: ${message}`;
+									}
+								}}
 							>
 								Submit
 							</motion.button>
