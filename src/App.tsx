@@ -46,7 +46,7 @@ const staggerContainer = {
 
 const TuneryLandingPage: React.FC = () => {
 	const [email, setEmail] = useState('');
-	const [scrollY, setScrollY] = useState(0);
+	const [setScrollY] = useState(0);
 	const [animatedText, setAnimatedText] = useState('open source AI');
 
 	// Text animation cycle
