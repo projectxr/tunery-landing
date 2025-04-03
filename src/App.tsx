@@ -122,6 +122,7 @@ const TuneryLandingPage: React.FC = () => {
 							animate={{
 								scale: [1, 1.1, 1],
 								opacity: [0.25, 0.3, 0.25],
+								y: scrollY * 0.1,
 							}}
 							transition={{
 								duration: 8,
@@ -136,6 +137,7 @@ const TuneryLandingPage: React.FC = () => {
 							animate={{
 								scale: [1, 1.1, 1],
 								opacity: [0.25, 0.3, 0.25],
+								y: -scrollY * 0.1,
 							}}
 							transition={{
 								duration: 6,
