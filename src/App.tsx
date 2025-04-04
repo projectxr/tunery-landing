@@ -78,7 +78,7 @@ const TuneryLandingPage: React.FC = () => {
 			{/* Navigation */}
 			<nav className='bg-white py-4 px-6 md:px-12 flex items-center justify-between max-w-7xl mx-auto'>
 				<div className='flex items-center'>
-					<img src='/tunery_nav_logo.png' alt='tunery.ai' className='h-8' />
+					<img src='/expanded_logo.svg' alt='tunery.ai' className='h-8' />
 				</div>
 				<div className='hidden md:flex space-x-8'>
 					<a
@@ -550,7 +550,7 @@ const TuneryLandingPage: React.FC = () => {
 					</div>
 
 					<div className='flex items-center'>
-						<img src='/tunery_nav_logo.png' alt='tunery.ai' className='h-8' />
+						<img src='/expanded_logo.svg' alt='tunery.ai' className='h-8' />
 					</div>
 
 					<div className='mt-4 md:mt-0 text-gray-500 text-sm'>
